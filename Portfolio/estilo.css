@@ -1,0 +1,681 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(fondoprueba3.jpg);
+    box-sizing: border-box;
+    font-family: Montserrat;
+
+}
+
+a{
+    text-decoration: none;
+    margin: auto;
+    padding: 0;
+}
+
+/*----- HEADER SECCION ------*/
+
+.header-seccion-primario{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(11, 22, 51);
+    display: flex;
+    position: fixed;
+    transition: all 0.5s ease;
+}
+.abajo{
+    background-color: rgba(0, 0, 0, 0.829);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+
+
+.header-seccion{
+    width: 732px;
+    height: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.header-seccion_nombre{
+    width: 180px;
+    height: 50px;
+    font-family: "Oswald";
+    display: flex;
+    align-items: center;
+}
+.header-seccion_nombre p{
+    color: aliceblue;
+    font-size: 20px;
+    letter-spacing: 1px;
+    user-select: none;
+}
+
+.header-seccion_lugares{
+    width: 300px;
+    height: 50px;
+}
+.seccion-lugares{
+    height: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.lugares{
+    color: rgb(177, 177, 177);
+    font-weight: 500;
+    margin: auto;
+    user-select: none;
+    transition: all 300ms;
+}
+.lugares:hover{
+    transform: translate(0px, -2px);
+    color: rgb(201, 200, 200);
+}
+.seccion-lugares:has(.lugares:hover) .lugares:not(:hover){
+    opacity: .4;
+}
+
+
+.header-seccion_redes{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.redes{
+    width: 40px;
+    height: 50px;
+    margin: auto;  
+    display: flex;
+}
+
+.icon{
+    margin: auto;
+    color: rgb(201, 200, 200);
+    font-size: 20px;
+    transition: all 300ms;
+}
+.icon:hover{
+    transform: translate(0px, -3px);
+}
+
+
+/*----- FIN HEADER SECCION ------*/
+
+
+
+/*----- HEADER SECCION UNO------*/
+.contenedor_seccion{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.Yo-contenedor{
+    width: 730px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.descripciones{
+    width: 500px;
+    height: 200px;
+
+}
+
+.imagen-Yo{
+    width: 230px;
+    height: 200px;
+    background-image: url(emiyo.jpg);
+    background-size: cover;
+    border-radius: 15%;
+}
+
+.descripcion-hola{
+    width: 100%;
+    height: 25px;
+}
+.descripcion-hola p{
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 17px;
+    /*text-shadow: 0 0 2px aliceblue;*/
+    margin: 0;
+}
+
+
+.descripcion-nom{
+    width: 100%;
+    height: 75px;
+}
+.descripcion-nom p{
+    font-size: 54px;
+    margin: 0;
+    font-family: "Anton";
+    letter-spacing: 1px;
+    background: linear-gradient(to right, #004aad, #38b6ff, #38b6ff, #004aad);
+    background-size: 200%;
+    color: transparent;
+    background-clip: text;
+    animation: animar-fondo 6s linear infinite;
+}
+
+
+.descripcion-des{
+    width: 100%;
+    height: 30px;
+}
+.descripcion-des p{
+    color: rgb(206, 206, 206);
+    font-size: 20px;
+    margin: 0;
+}
+
+/*----- FIN HEADER SECCION UNO------*/
+
+
+/*----- HEADER SECCION DOS------*/
+
+
+.contenedor-seccionDos{
+    width: 100%;
+    height: 300px;
+    display: flex;
+}
+
+.contenedor-cajas_seccionDos{
+    width: 730px;
+    height: 160px;
+    margin: auto;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+.cajas__contenedorDos{
+    width: 200px;
+    height: 160px;
+    margin: auto;
+   
+}
+
+
+.logo-caja{
+    width: 50px;
+    height: 40px;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+}
+.logo-caja i{
+    font-size: 27px;
+    background: linear-gradient(to right, #004aad, #38b6ff, #38b6ff, #004aad);
+    background-size: 200%;
+    color: transparent;
+    background-clip: text;
+    animation: animar-fondo 6s linear infinite;
+}
+
+.P-caja{
+    width: 100%;
+    height: 30px;
+}
+.P-caja p{
+    color: aliceblue;
+    font-size: 23px;
+    font-weight: 500;   
+    margin: 0;
+    user-select: none;
+}
+
+.P-mini-caja{
+    width: 100%;
+    height: 40px;
+}
+.P-mini-caja p{
+    color: rgb(177, 177, 177);
+    margin: 0;
+    font-size: 13px;
+    user-select: none;
+}
+
+/*----- FIN HEADER SECCION DOS------*/
+
+
+/*----- HEADER SECCION TRES------*/
+
+.contenedor-seccionTres{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-cajas_seccionTres{
+    width: 730px;
+    height: 900px;
+}
+
+.P_Experiencia{
+    width: 100%;
+    height: 80px;
+}
+.P_Experiencia p{
+    font-size: 45px;
+    margin: 0;
+    font-family: "Anton";
+    letter-spacing: 1px;
+    background: linear-gradient(to right, #004aad, #38b6ff, #38b6ff, #004aad);
+    background-size: 200%;
+    color: transparent;
+    background-clip: text;
+    animation: animar-fondo 6s linear infinite;
+}
+
+.caja-experiencias{
+    width: 100%;
+    height: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+}
+
+.caja-titulo_info{
+    height: 100%;
+}
+
+.caja_info{
+    height: 100%;
+}
+
+.caja-titulo_dentro{
+    width: 100%;
+    height: 50px;
+    display: flex;
+}
+
+.icono-ex{
+    width: 45px;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    border-radius: 70px;
+    border: 1px solid #004aaa;
+}
+.icono-ex i{
+    color: rgb(172, 172, 172);
+    font-size: 24px;
+    margin: auto;
+}
+
+.parrafos-ex{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.parrafos-ex p{
+    color: aliceblue;
+    font-size: 19px;
+    font-weight: 400;   
+    margin: 0;
+    padding-left: 5px;
+}
+
+.fecha-info{
+    width: 100%;
+    height: 20px;
+}
+.fecha-info p{
+    color: rgb(226, 226, 226);
+    margin: 0;
+    font-size: 13px;
+}
+
+.texto-info{
+    width: 100%;
+    height: 210px;
+}
+.texto-info p{
+    margin: 0;
+    color: rgb(175, 175, 175);
+    font-size: 15px;
+}
+
+.boton-texto-info{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: end;
+}
+.boton-texto-info button{
+    margin: 0;
+    padding: 1px 13px;
+    color: aliceblue;
+    letter-spacing: 1px;
+    font-size: 15px;
+    background-color: transparent;
+    font-family: Montserrat;
+    border-radius: 4px;
+    border: 2px solid #004aad;
+    transition: all 330ms;
+}
+.boton-texto-info button:hover{
+    background-color: #021e44b6;
+    text-shadow: 0 0 10px #006eff;
+    border: 2px solid #05397e;
+}
+
+.caja-relativa{
+    z-index: -100;
+    width: 10px;
+    height: 250px;
+    position: absolute;
+    background-color: transparent;
+    border-left: 1px solid rgba(255, 255, 255, 0.11);
+    top: 830px;
+    left: 330px;
+}
+.caja-relativa2{
+    z-index: -100;
+    width: 10px;
+    height: 250px;
+    position: absolute;
+    background-color: transparent;
+    border-left: 1px solid rgba(255, 255, 255, 0.11);
+    top: 1130px;
+    left: 330px;
+}
+
+/*----- FIN HEADER SECCION TRES------*/
+
+
+/*----- HEADER SECCION CUATRO------*/
+
+.contenedor-seccionCuatro{
+    width: 100%;
+    height: 320px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contenedor-caja_seccionCuatro{
+    width: 730px;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 10px;
+}
+
+.caja-P_seccionCuatro{
+    width: 400px;
+    height: 80px;
+    margin: auto;
+}
+
+.caja-botones_seccionCuatro{
+    width: 280px;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.P1-SC{
+    margin: 0;
+    color: aliceblue;
+    font-size: 30px;
+}
+.P2-SC{
+    color: rgb(206, 206, 206);
+    margin: 0;
+    font-size: 17px;
+    padding-top: 6px;
+}
+
+.botonesSC{
+    width: 130px;
+    height: 50px;
+    margin: auto;
+}
+
+.B{
+    padding: 10px 20px;
+    color: aliceblue;
+    font-size: 15px;
+    background-color: transparent;
+    font-family: Montserrat;
+    border-radius: 5px;
+    border: 2px solid #004aad;
+    transition: all 330ms;
+}
+.B:hover{
+    background-color: #021e44b6;
+    text-shadow: 0 0 10px #006eff;
+    border: 2px solid #05397e;
+}
+
+.BSC{
+    margin-left: 20px;
+}
+
+
+/*----- FIN HEADER SECCION CUATRO------*/
+
+
+/*----- HEADER SECCION CINCO------*/
+
+.contenedor-seccionCinco{
+    width: 100%;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor-cajas_seccionCinco{
+    width: 730px;
+    height: 800px;
+}
+
+.P_Proyectos{
+    width: 100%;
+    height: 80px;
+}
+.P_Proyectos p{
+    font-size: 45px;
+    margin: 0;
+    font-family: "Anton";
+    letter-spacing: 1px;
+    background: linear-gradient(to right, #004aad, #38b6ff, #38b6ff, #004aad);
+    background-size: 200%;
+    color: transparent;
+    background-clip: text;
+    animation: animar-fondo 6s linear infinite;
+}
+
+
+.proyectos-caja{
+    width: 100%;
+    height: 660px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+
+.caja-proyectos_grid{
+    border-radius: 7px;
+    border: 1px solid rgba(255, 255, 255, 0.11);
+}
+
+.descripcion-proyectos{
+    width: 215px;
+    height: 305px;
+    margin: 10px;
+}
+
+.caja_imagen{
+    width: 100%;
+    height: 190px;
+    background-image: url(An232.png);
+    background-size: cover;
+    background-position: -17px 0px;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+.caja_imagen:hover{
+    transform: scale(0.98);
+    cursor: pointer;
+   
+}
+.caja_nom{
+    width: 100%;
+    height: 40px;
+    align-content: center;
+}
+.caja_nom p{
+    margin: 0;
+    font-size: 19px;
+    font-weight: 500;
+    color: rgb(206, 206, 206);
+}
+
+.caja-descripcion_nom{
+    width: 100%;
+    height: 75px;
+}
+.caja-descripcion_nom p{
+    margin: 0;
+    font-size: 14px;
+    color: rgb(177, 177, 177);
+}
+
+
+/*----- FIN HEADER SECCION CINCO------*/
+
+
+/*----- HEADER SECCION SEIS------*/
+
+.contenedor-seccionSeis{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.contenedor-cajas_seccionSeis{
+    width: 730px;
+    height: 100%;
+}
+
+.caja-P_tec{
+    width: 100%;
+    height: 40px;
+    display: flex;
+}
+.caja-P_tec p{
+    margin: auto;
+    font-size: 19px;
+    font-weight: 500;
+    color: aliceblue;
+    user-select: none;
+}
+
+.caja-tecnol{
+    width: 100%;
+    height: 80px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.mini-cajas_tecnol{
+    background-color: rgba(255, 255, 255, 0.089);
+    display: flex;
+    border-radius: 7px;
+}
+.mini-cajas_tecnol i{
+    margin: auto;
+    font-size: 60px;
+    color: rgb(190, 190, 190);
+}
+.mini-cajas_tecnol svg{
+    margin: auto;
+}
+
+
+/*----- FIN HEADER SECCION SEIS ------*/
+
+
+
+/*----- FOOTER------*/
+
+
+.footer{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(11, 22, 51);
+    border-top: 2px solid rgba(255, 255, 255, 0.11);
+    display: flex;
+}
+
+.caja-footer{
+    width: 130px;
+    height: 90px;
+    margin: auto;
+}
+
+.caja-icon-footer{
+    width: 100%;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.incon-footer{
+    display: flex;
+}
+
+.incon-footer i{
+    margin: auto;
+    color: rgb(201, 200, 200);
+    font-size: 22px;
+    transition: all 300ms;
+}
+.incon-footer i:hover{
+    transform: translate(0px, -3px);
+}
+
+.caja-nom-footer{
+    width: 100%;
+    height: 20px;
+}
+.caja-nom-footer p{
+    margin: 0;
+    font-size: 14px;
+    color: rgb(177, 177, 177);
+    user-select: none;
+}
+
+@keyframes animar-fondo {
+    to{
+        background-position: 200% center;
+    }
+}
